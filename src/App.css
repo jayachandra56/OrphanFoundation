@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  width: 100%;
+  padding:0em;
+  margin: 0em;
 }
 
 .App-logo {
@@ -13,6 +16,12 @@
   }
 }
 
+.margin-small{
+  margin: 10px;
+}
+.padding-small{
+  padding: 10px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +44,154 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.mian-container, .header-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container .logo{
+  width: 20%;
+  background-color: orange;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .logo img{
+  width: 150px;
+  height: 150px;
+}
+.header-container .banner{
+  width: 80%;
+  background-color: #e2e18c;
+  height: 200px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.header-container .banner img{ 
+  width: 100%;
+  height: 200px;
+}
+.header-container .banner q{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  width: 200px;
+}
+.header-container .img{
+  width: 20%;
+  background-color: orange;
+  height: 200px;
+  background-image: url(./asserts/sidebar-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.header-container .img p{
+  color: whitesmoke;
+  font-size: xx-large;
+} 
+
+.menu{
+  width: 20%;
+  background-color: orange;
+}
+.content{
+  width: 80%;
+  background-color: #e2e18c;
+  text-align: left;
+}
+.sidebar{
+  width: 20%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: rgb(112, 14, 14);
+}
+.menu-container{
+  width:100%;
+  
+}
+
+.menu-items{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-items .item{
+  padding: 10px;
+  font-weight: bold;
+  width: 100%;
+  border-left: .1em solid black;
+  border-right: .1em solid black;
+  border-bottom: .1em solid black;
+}
+.menu-items .active{
+  padding: 10px;
+  font-weight: bold;
+  width: 100%;
+  background-color: rgb(245, 207, 83);
+}
+
+.menu-items .item:hover{
+  background-color: rgb(245, 207, 83);
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+Link{
+  text-decoration: none;
+}
+
+
+.sidebar-image{
+  width: 90%;
+  height: 150px;
+  border: 2px solid rgb(184, 91, 91);
+  margin: 20px 5px;
+}
+
+.sidebar-content{
+  margin: 10px;
+  background-color: #e2e18c;
+  font-weight: bold;
+  
+}
+
+.sidebar-items{
+  width: 100%;
+  text-align: start;
+  color: rgb(17, 17, 17);
+}
+
+.gallary-img{
+  margin: 8px;
+  border:1px solid rgb(58, 87, 253);
+  width: 200px;
+  overflow: hidden;
+}
+.login-conatiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
